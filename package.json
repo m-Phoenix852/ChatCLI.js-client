@@ -1,0 +1,25 @@
+{
+  "name": "chatcli.js-client",
+  "version": "1.0.0",
+  "description": "Command line chat client built with socket.io. ChatCLI.js is what your mom warned you about!",
+  "main": "index.js",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/m-Phoenix852/ChatCLI.js-client.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/m-Phoenix852/ChatCLI.js-client/issues"
+  },
+  "homepage": "https://github.com/m-Phoenix852/ChatCLI.js-client#readme"
+}
