@@ -1,7 +1,7 @@
 const tools = require('./tools.js');
 const chalk = require('chalk');
 
-module.exports = (socket) => {
+module.exports = (socket, io) => {
     socket.on('connect', () => {
         console.log(chalk.green('Connected to websocket!'));
         var messageInputStream = tools.promptForMessage(socket);
@@ -17,7 +17,7 @@ module.exports = (socket) => {
         console.log(chalk.red(`Disconnected from websocket! Check your internet connection!`));
     })
 
-    socket.on("error", err => {
-        console.error(chalk.yellow("System: ") + chalk.red(err));
+    socket.on("clientError", err => {
+        console.error(chalk.red("System [ERROR]: ") + err);
     })
 }
